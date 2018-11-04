@@ -9,7 +9,7 @@
     "watch": "webpack --watch",
     "start": "webpack-dev-server --open --config webpack/webpack.dev.js",
     "build:caching": "webpack --config webpack.caching.js",
-    "build:pro": "webpack --config webpack/webpack.prod.js",
+    "build": "webpack --config webpack/webpack.prod.js",
     "server": "node server.js",
     "server:dev": "node dev-server.js"
   },
