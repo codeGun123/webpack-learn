@@ -1,0 +1,38 @@
+{
+  "name": "learn-webpack",
+  "sideEffects": false,
+  "version": "1.0.0",
+  "description": "静态模块打包器,递归的构建一个依赖关系图，包含每个模块，然后将所有模块打包成一个或者多个 bundle",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "start": "webpack-dev-server --open --config webpack/webpack.dev.js",
+    "build:caching": "webpack --config webpack.caching.js",
+    "build:pro": "webpack --config webpack/webpack.prod.js",
+    "server": "node server.js",
+    "server:dev": "node dev-server.js"
+  },
+  "keywords": [],
+  "author": "rocky",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^1.0.1",
+    "express": "^4.16.4",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.23.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-middleware": "^3.4.0",
+    "webpack-dev-server": "^3.1.10",
+    "webpack-manifest-plugin": "^2.0.4",
+    "webpack-merge": "^4.1.4"
+  },
+  "dependencies": {
+    "antd": "^3.10.3",
+    "lodash": "^4.17.11",
+    "react": "^16.6.0"
+  }
+}
